@@ -64,6 +64,17 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// document.addEventListener('DOMContentLoaded', function () {
+//     const hamburgerMenu = document.querySelector('.hamburger-menu');
+//     const menuLinks = document.querySelector('.menu-links');
+//     const menuIcon = document.querySelector('.menu-icon');
+  
+//     hamburgerMenu.addEventListener('click', function () {
+//       this.classList.toggle('open');
+//       menuLinks.classList.toggle('open');
+//     });
+//   });
+
 // Check if elements are in the viewport on scroll
 window.addEventListener("scroll", () => {
   animatedElements.forEach((element) => {
