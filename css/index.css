@@ -285,12 +285,23 @@ header {
  opacity: 0.4;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
+  html body{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+  }
   #main-menu {
     display: none;
   }
   #hamburger-menu {
     display: inline;
+  }
+
+  footer{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -677,9 +688,7 @@ footer p {
 }
 
 @media screen and (max-width: 1000px) {
-  body {
-    position: absolute;
-  }
+ 
   header {
     padding: var(--padding-sm);
   }
@@ -737,7 +746,7 @@ footer p {
   }
   .contact-info > div,
   .contact-info > nav {
-    padding: 1rem 0;
+    padding: 1rem 8rem;
   }
   .contact-info-contacts {
     align-items: flex-start;
@@ -755,24 +764,35 @@ footer p {
 }
 
 
-@media screen and (max-width: 800px){
-  body{
-    position: absolute;
-    width: 70%;
-  }
-} 
 
-@media screen and (max-width: 375px) {
-  body {
-    position: absolute;
-    width: 70%;
-  }
+
+@media screen and (max-width: 375px) { 
+    html body{
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 0;
+      align-items: center;
+    }
+
+    #hamburger-menu {
+      display: inline;
+      position: absolute;
+      padding: 10px;
+      height: 15px;
+      width: 15px;
+    }
+  
+    footer{
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  
 
   header {
     padding: var(--padding-sm);
   }
-  header img,
-  footer img {
+  header img{
     width: 117px;
     height: auto;
   }
@@ -783,6 +803,21 @@ footer p {
     min-width: 50%;
   }
   .contact-info {
-    padding: var(--padding-footer-mobile);
+    padding: 50px 2px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-info > div,
+  .contact-info > nav {
+    padding: 1rem 4rem;
+  }
+
+  .contact-info p {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .contact-info-links .contact-info-links-list li a {
+    white-space: nowrap;
   }
 }
